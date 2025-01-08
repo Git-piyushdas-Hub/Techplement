@@ -20,9 +20,6 @@ const connectDB = async () => {
 }
 connectDB()
 
-// app.get('/',(req,res)=>{
-//     res.send('Working')
-// })
 app.use('/api/users', userRoutes)
 
 app.listen(PORT,()=>{
